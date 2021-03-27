@@ -2,10 +2,18 @@
   "name": "@irodgal/blueprint-express",
   "version": "1.0.0",
   "description": "Express archetype",
-  "main": "index.js",
+  "main": "server-example.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server-example.js",
+    "test": "echo No test"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Iván R. Galicia",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "peerDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
 }
