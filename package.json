@@ -1,10 +1,11 @@
 {
   "name": "@irodgal/blueprint-express",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Express archetype",
   "main": "server-example.js",
   "scripts": {
     "start": "nodemon server-example.js",
+    "client": "node client-example.js",
     "test": "echo No test"
   },
   "author": "Iván R. Galicia",
@@ -13,6 +14,7 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
   }

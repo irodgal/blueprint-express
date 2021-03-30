@@ -42,6 +42,7 @@ app.get('/people', (req, res) => {
 
 // POST handler
 app.post('/people', (req, res) => {
+    console.log('POST');
     console.log(req.body);
 
     res.status(200).send('POST ok!')
