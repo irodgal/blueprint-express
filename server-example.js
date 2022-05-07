@@ -11,12 +11,18 @@ const app = new express();
 const port  = 3000;
 
 // using application/json body-parser
+/*
 app.use(
     bodyParser.urlencoded({
         extended: false
     })
 );
 app.use(bodyParser.json());
+*/
+app.use(express.urlencoded({
+    extended: false
+}));
+app.use(express.json());
 
 
 // GET handler

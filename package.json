@@ -1,6 +1,6 @@
 {
   "name": "@irodgal/blueprint-express",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express archetype",
   "main": "server-example.js",
   "scripts": {
