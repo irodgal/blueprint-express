@@ -74,10 +74,12 @@ const forwarding = async (req, res) => {
             protocol: 'http:'
         };
         */
+       console.log('1');
 
         req.headers['MY-HEADER'] = 'la_mia';
 
         const axiosReq = `http://localhost:${port}/${src}`;
+        console.log(axiosReq);
         const responseAxios = await axios.get(axiosReq, {headers: req.headers});
 
         console.log('HOLA2');
@@ -164,6 +166,8 @@ const forwarding2 = (req, res) => {
         console.log('Error: no SRC or no PORT queryparam');
         res.status(400).send('Error: no SRC or no PORT queryparam');
     } else {
+        console.log('1');
+
         // esta sera la request "del medio"
         const reqOpts = {
             headers: req.headers,
@@ -174,7 +178,7 @@ const forwarding2 = (req, res) => {
             protocol: 'http:'
         };
 
-        /*
+        
 
         console.log('esto es lo que se pasa al htttp.request2222: ', reqOpts);
 
@@ -189,7 +193,7 @@ const forwarding2 = (req, res) => {
         });
 
         req.pipe(connector).on('error', console.error);
-        */
+        
 
     }
 };

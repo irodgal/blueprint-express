@@ -6,14 +6,14 @@
   "scripts": {
     "start": "node index.js PORT=3000",
     "start2": "nodemon index.js PORT=3000",
-    "start:service1": "nodemon ./service1/service1.js",
+    "start:service1": "node ./service1/service1.js PORT=3331",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
